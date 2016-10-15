@@ -1,13 +1,8 @@
 import React from 'react';
 import { render } from 'react-dom';
 
-
-class Hello extends React.Component {
-    render() {
-        return (
-            <div>Hello suzhali!</div>
-        )
-    };
-}
+const Hello = () => (
+    <div> Hey world </div>
+);
 
 render(<Hello/>, document.getElementById('app'));
