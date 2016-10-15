@@ -1,8 +1,8 @@
 import React from 'react';
 import { render } from 'react-dom';
 
-const Hello = () => (
-    <div> Hey world </div>
+const Hello = (props) => (
+    <div> Hey {props.name} </div>
 );
 
-render(<Hello/>, document.getElementById('app'));
+render(<Hello name='world'/>, document.getElementById('app'));
